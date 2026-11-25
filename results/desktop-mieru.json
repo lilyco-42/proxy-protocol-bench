@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "label": "desktop-mieru",
+  "server_region": "Los Angeles DC03",
+  "started_utc": "2026-11-25T12:52:00.836786+00:00",
+  "ended_utc": "2026-11-25T12:58:40.255946+00:00",
+  "payload_bytes": 1048576,
+  "rounds": 6,
+  "round_gap_seconds": 15.0,
+  "timeout_seconds": 18,
+  "seed": 74,
+  "cases": {
+    "mieru-tcp": {
+      "engine": "mieru",
+      "transport": "tcp"
+    },
+    "mieru-udp": {
+      "engine": "mieru",
+      "transport": "udp"
+    },
+    "direct-https": {
+      "engine": "curl",
+      "transport": "tcp"
+    }
+  },
+  "client_engines": {
+    "mieru": "3.40.0"
+  },
+  "server_engines": {
+    "mieru": "3.40.0"
+  },
+  "server_kernel": "6.8.0-31-generic",
+  "rows": [
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1252.301,
+      "total_ms": 18034.697,
+      "received_bytes": 442368,
+      "mbps": null,
+      "case": "mieru-tcp",
+      "round": 1,
+      "at_utc": "2026-11-25T12:52:19.552398+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 912.313,
+      "total_ms": 18072.974,
+      "received_bytes": 786432,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 1,
+      "at_utc": "2026-11-25T12:52:37.761222+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 3102.479,
+      "total_ms": 18006.082,
+      "received_bytes": 32768,
+      "mbps": null,
+      "case": "mieru-udp",
+      "round": 1,
+      "at_utc": "2026-11-25T12:52:56.150252+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1017.646,
+      "total_ms": 18034.344,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "mieru-udp",
+      "round": 2,
+      "at_utc": "2026-11-25T12:53:29.284107+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 865.854,
+      "total_ms": 18122.796,
+      "received_bytes": 344064,
+      "mbps": null,
+      "case": "mieru-tcp",
+      "round": 2,
+      "at_utc": "2026-11-25T12:53:47.440508+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 900.478,
+      "total_ms": 18018.506,
+      "received_bytes": 966656,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 2,
+      "at_utc": "2026-11-25T12:54:05.913601+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 900.549,
+      "total_ms": 18015.278,
+      "received_bytes": 573440,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 3,
+      "at_utc": "2026-11-25T12:54:38.969225+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1263.273,
+      "total_ms": 18061.06,
+      "received_bytes": 32768,
+      "mbps": null,
+      "case": "mieru-udp",
+      "round": 3,
+      "at_utc": "2026-11-25T12:54:57.062535+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 991.205,
+      "total_ms": 18047.295,
+      "received_bytes": 245760,
+      "mbps": null,
+      "case": "mieru-tcp",
+      "round": 3,
+      "at_utc": "2026-11-25T12:55:15.215377+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 3316.546,
+      "total_ms": 18006.101,
+      "received_bytes": 376832,
+      "mbps": null,
+      "case": "mieru-tcp",
+      "round": 4,
+      "at_utc": "2026-11-25T12:55:48.261399+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 2146.829,
+      "total_ms": 18020.826,
+      "received_bytes": 16384,
+      "mbps": null,
+      "case": "mieru-udp",
+      "round": 4,
+      "at_utc": "2026-11-25T12:56:06.479848+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1788.015,
+      "total_ms": 18115.015,
+      "received_bytes": 262144,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 4,
+      "at_utc": "2026-11-25T12:56:25.192728+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 1056.394,
+      "total_ms": 14605.913,
+      "received_bytes": 1048576,
+      "mbps": 0.6191,
+      "case": "direct-https",
+      "round": 5,
+      "at_utc": "2026-11-25T12:56:54.871213+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1098.062,
+      "total_ms": 18031.915,
+      "received_bytes": 32768,
+      "mbps": null,
+      "case": "mieru-udp",
+      "round": 5,
+      "at_utc": "2026-11-25T12:57:12.962833+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1276.368,
+      "total_ms": 18004.141,
+      "received_bytes": 131072,
+      "mbps": null,
+      "case": "mieru-tcp",
+      "round": 5,
+      "at_utc": "2026-11-25T12:57:31.013681+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1163.311,
+      "total_ms": 18000.671,
+      "received_bytes": 557056,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 6,
+      "at_utc": "2026-11-25T12:58:04.033844+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 778.738,
+      "total_ms": 18002.071,
+      "received_bytes": 278528,
+      "mbps": null,
+      "case": "mieru-tcp",
+      "round": 6,
+      "at_utc": "2026-11-25T12:58:22.084436+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 934.976,
+      "total_ms": 18002.98,
+      "received_bytes": 16384,
+      "mbps": null,
+      "case": "mieru-udp",
+      "round": 6,
+      "at_utc": "2026-11-25T12:58:40.217315+00:00"
+    }
+  ]
+}

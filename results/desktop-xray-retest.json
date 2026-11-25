@@ -1,0 +1,287 @@
+{
+  "schema": 1,
+  "label": "desktop-xray-retest",
+  "server_region": "Los Angeles DC03",
+  "started_utc": "2026-11-25T12:44:13.481949+00:00",
+  "ended_utc": "2026-11-25T12:51:14.828155+00:00",
+  "payload_bytes": 1048576,
+  "rounds": 7,
+  "round_gap_seconds": 32.0,
+  "timeout_seconds": 18,
+  "seed": 42,
+  "cases": {
+    "vless-xhttp-tls": {
+      "engine": "xray",
+      "transport": "tcp"
+    },
+    "vmess-mkcp": {
+      "engine": "xray",
+      "transport": "udp"
+    },
+    "direct-https": {
+      "engine": "curl",
+      "transport": "tcp"
+    }
+  },
+  "client_engines": {
+    "xray": "Xray 26.11.9 (Xray, Penetrates Everything.) 676eaf6 (go1.27.3 linux/amd64)"
+  },
+  "server_engines": {
+    "xray": "Xray 26.11.9 (Xray, Penetrates Everything.) 676eaf6 (go1.27.3 linux/amd64)"
+  },
+  "server_kernel": "6.8.0-31-generic",
+  "rows": [
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 5258.077,
+      "total_ms": 18000.964,
+      "received_bytes": 966656,
+      "mbps": null,
+      "case": "vless-xhttp-tls",
+      "round": 1,
+      "at_utc": "2026-11-25T12:44:31.797994+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 719.401,
+      "total_ms": 18004.761,
+      "received_bytes": 442368,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 1,
+      "at_utc": "2026-11-25T12:44:49.817445+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1811.466,
+      "total_ms": 18004.25,
+      "received_bytes": 589824,
+      "mbps": null,
+      "case": "vmess-mkcp",
+      "round": 1,
+      "at_utc": "2026-11-25T12:45:07.840287+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 6066.179,
+      "total_ms": 18001.806,
+      "received_bytes": 131072,
+      "mbps": null,
+      "case": "vmess-mkcp",
+      "round": 2,
+      "at_utc": "2026-11-25T12:45:57.863979+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 719.941,
+      "total_ms": 9824.595,
+      "received_bytes": 1048576,
+      "mbps": 0.9214,
+      "case": "direct-https",
+      "round": 2,
+      "at_utc": "2026-11-25T12:46:07.697464+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 1465.761,
+      "total_ms": 7657.289,
+      "received_bytes": 1048576,
+      "mbps": 1.3549,
+      "case": "vless-xhttp-tls",
+      "round": 2,
+      "at_utc": "2026-11-25T12:46:15.363715+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 840.07,
+      "total_ms": 5063.037,
+      "received_bytes": 1048576,
+      "mbps": 1.9864,
+      "case": "direct-https",
+      "round": 3,
+      "at_utc": "2026-11-25T12:46:52.451105+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 1620.162,
+      "total_ms": 4641.6,
+      "received_bytes": 1048576,
+      "mbps": 2.7764,
+      "case": "vless-xhttp-tls",
+      "round": 3,
+      "at_utc": "2026-11-25T12:46:57.100726+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 1177.574,
+      "total_ms": 8776.973,
+      "received_bytes": 1048576,
+      "mbps": 1.1039,
+      "case": "vmess-mkcp",
+      "round": 3,
+      "at_utc": "2026-11-25T12:47:05.885980+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 644.738,
+      "total_ms": 9770.986,
+      "received_bytes": 1048576,
+      "mbps": 0.9192,
+      "case": "vless-xhttp-tls",
+      "round": 4,
+      "at_utc": "2026-11-25T12:47:47.665598+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 1080.349,
+      "total_ms": 7681.261,
+      "received_bytes": 1048576,
+      "mbps": 1.2708,
+      "case": "vmess-mkcp",
+      "round": 4,
+      "at_utc": "2026-11-25T12:47:55.354890+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 875.931,
+      "total_ms": 4820.939,
+      "received_bytes": 1048576,
+      "mbps": 2.1264,
+      "case": "direct-https",
+      "round": 4,
+      "at_utc": "2026-11-25T12:48:00.183898+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 785.509,
+      "total_ms": 6075.16,
+      "received_bytes": 1048576,
+      "mbps": 1.5859,
+      "case": "vmess-mkcp",
+      "round": 5,
+      "at_utc": "2026-11-25T12:48:38.280095+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 989.169,
+      "total_ms": 4608.57,
+      "received_bytes": 1048576,
+      "mbps": 2.3177,
+      "case": "vless-xhttp-tls",
+      "round": 5,
+      "at_utc": "2026-11-25T12:48:42.897154+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 1069.148,
+      "total_ms": 4402.611,
+      "received_bytes": 1048576,
+      "mbps": 2.5165,
+      "case": "direct-https",
+      "round": 5,
+      "at_utc": "2026-11-25T12:48:47.312570+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 716.026,
+      "total_ms": 8766.252,
+      "received_bytes": 1048576,
+      "mbps": 1.042,
+      "case": "vmess-mkcp",
+      "round": 6,
+      "at_utc": "2026-11-25T12:49:28.091550+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 940.892,
+      "total_ms": 8549.365,
+      "received_bytes": 1048576,
+      "mbps": 1.1025,
+      "case": "vless-xhttp-tls",
+      "round": 6,
+      "at_utc": "2026-11-25T12:49:36.650562+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 983.197,
+      "total_ms": 17195.022,
+      "received_bytes": 1048576,
+      "mbps": 0.5174,
+      "case": "direct-https",
+      "round": 6,
+      "at_utc": "2026-11-25T12:49:53.856533+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 631.221,
+      "total_ms": 18081.1,
+      "received_bytes": 409600,
+      "mbps": null,
+      "case": "vless-xhttp-tls",
+      "round": 7,
+      "at_utc": "2026-11-25T12:50:44.054719+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1161.999,
+      "total_ms": 18002.072,
+      "received_bytes": 425984,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 7,
+      "at_utc": "2026-11-25T12:51:02.201180+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 956.053,
+      "total_ms": 12349.037,
+      "received_bytes": 1048576,
+      "mbps": 0.7363,
+      "case": "vmess-mkcp",
+      "round": 7,
+      "at_utc": "2026-11-25T12:51:14.603320+00:00"
+    }
+  ]
+}

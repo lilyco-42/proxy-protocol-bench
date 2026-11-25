@@ -1,0 +1,288 @@
+{
+  "schema": 1,
+  "label": "loopback-shadowtls-keepalive",
+  "server_region": "Los Angeles DC03",
+  "started_utc": "2026-11-25T12:59:03.465360+00:00",
+  "ended_utc": "2026-11-25T12:59:21.293820+00:00",
+  "payload_bytes": 1048576,
+  "rounds": 7,
+  "round_gap_seconds": 2.0,
+  "timeout_seconds": 8,
+  "seed": 45,
+  "origin_keep_alive": true,
+  "cases": {
+    "ss-2022": {
+      "engine": "sing-box",
+      "transport": "tcp"
+    },
+    "shadowtls-v3-ss2022": {
+      "engine": "sing-box",
+      "transport": "tcp"
+    },
+    "direct-https": {
+      "engine": "curl",
+      "transport": "tcp"
+    }
+  },
+  "client_engines": {
+    "sing-box": "sing-box version 1.14.4"
+  },
+  "server_engines": {
+    "sing-box": "sing-box version 1.14.4"
+  },
+  "server_kernel": "6.8.0-31-generic",
+  "rows": [
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 13.862,
+      "total_ms": 29.736,
+      "received_bytes": 1048576,
+      "mbps": 528.4495,
+      "case": "direct-https",
+      "round": 1,
+      "at_utc": "2026-11-25T12:59:07.504142+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 18,
+      "status": 200,
+      "first_ms": 45.533,
+      "total_ms": 73.055,
+      "received_bytes": 507904,
+      "mbps": null,
+      "case": "shadowtls-v3-ss2022",
+      "round": 1,
+      "at_utc": "2026-11-25T12:59:07.598981+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 13.843,
+      "total_ms": 69.42,
+      "received_bytes": 1048576,
+      "mbps": 150.9367,
+      "case": "ss-2022",
+      "round": 1,
+      "at_utc": "2026-11-25T12:59:07.688980+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 19.984,
+      "total_ms": 69.87,
+      "received_bytes": 1048576,
+      "mbps": 168.1556,
+      "case": "direct-https",
+      "round": 2,
+      "at_utc": "2026-11-25T12:59:09.792330+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 18.28,
+      "total_ms": 70.87,
+      "received_bytes": 1048576,
+      "mbps": 159.5096,
+      "case": "ss-2022",
+      "round": 2,
+      "at_utc": "2026-11-25T12:59:09.889465+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 18,
+      "status": 200,
+      "first_ms": 37.187,
+      "total_ms": 76.01,
+      "received_bytes": 491520,
+      "mbps": null,
+      "case": "shadowtls-v3-ss2022",
+      "round": 2,
+      "at_utc": "2026-11-25T12:59:09.985781+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 18,
+      "status": 200,
+      "first_ms": 27.908,
+      "total_ms": 57.107,
+      "received_bytes": 475136,
+      "mbps": null,
+      "case": "shadowtls-v3-ss2022",
+      "round": 3,
+      "at_utc": "2026-11-25T12:59:12.077332+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 13.305,
+      "total_ms": 30.278,
+      "received_bytes": 1048576,
+      "mbps": 494.2325,
+      "case": "ss-2022",
+      "round": 3,
+      "at_utc": "2026-11-25T12:59:12.127055+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 10.503,
+      "total_ms": 20.101,
+      "received_bytes": 1048576,
+      "mbps": 873.9954,
+      "case": "direct-https",
+      "round": 3,
+      "at_utc": "2026-11-25T12:59:12.169350+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 11.897,
+      "total_ms": 59.945,
+      "received_bytes": 1048576,
+      "mbps": 174.5881,
+      "case": "direct-https",
+      "round": 4,
+      "at_utc": "2026-11-25T12:59:14.254639+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 18,
+      "status": 200,
+      "first_ms": 29.259,
+      "total_ms": 54.001,
+      "received_bytes": 475136,
+      "mbps": null,
+      "case": "shadowtls-v3-ss2022",
+      "round": 4,
+      "at_utc": "2026-11-25T12:59:14.325384+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 17.313,
+      "total_ms": 68.898,
+      "received_bytes": 1048576,
+      "mbps": 162.6172,
+      "case": "ss-2022",
+      "round": 4,
+      "at_utc": "2026-11-25T12:59:14.421307+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 16.733,
+      "total_ms": 70.828,
+      "received_bytes": 1048576,
+      "mbps": 155.0718,
+      "case": "ss-2022",
+      "round": 5,
+      "at_utc": "2026-11-25T12:59:16.526753+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 18,
+      "status": 200,
+      "first_ms": 19.782,
+      "total_ms": 43.413,
+      "received_bytes": 491520,
+      "mbps": null,
+      "case": "shadowtls-v3-ss2022",
+      "round": 5,
+      "at_utc": "2026-11-25T12:59:16.585770+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 10.344,
+      "total_ms": 24.531,
+      "received_bytes": 1048576,
+      "mbps": 591.2884,
+      "case": "direct-https",
+      "round": 5,
+      "at_utc": "2026-11-25T12:59:16.633413+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 18,
+      "status": 200,
+      "first_ms": 32.236,
+      "total_ms": 53.184,
+      "received_bytes": 491520,
+      "mbps": null,
+      "case": "shadowtls-v3-ss2022",
+      "round": 6,
+      "at_utc": "2026-11-25T12:59:18.703227+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 8.805,
+      "total_ms": 17.158,
+      "received_bytes": 1048576,
+      "mbps": 1004.2629,
+      "case": "direct-https",
+      "round": 6,
+      "at_utc": "2026-11-25T12:59:18.741613+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 28.528,
+      "total_ms": 49.284,
+      "received_bytes": 1048576,
+      "mbps": 404.1534,
+      "case": "ss-2022",
+      "round": 6,
+      "at_utc": "2026-11-25T12:59:18.814651+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 23.306,
+      "total_ms": 79.849,
+      "received_bytes": 1048576,
+      "mbps": 148.358,
+      "case": "ss-2022",
+      "round": 7,
+      "at_utc": "2026-11-25T12:59:20.926959+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 18,
+      "status": 200,
+      "first_ms": 34.007,
+      "total_ms": 65.201,
+      "received_bytes": 507904,
+      "mbps": null,
+      "case": "shadowtls-v3-ss2022",
+      "round": 7,
+      "at_utc": "2026-11-25T12:59:21.012921+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 7.858,
+      "total_ms": 17.648,
+      "received_bytes": 1048576,
+      "mbps": 856.8547,
+      "case": "direct-https",
+      "round": 7,
+      "at_utc": "2026-11-25T12:59:21.050147+00:00"
+    }
+  ]
+}

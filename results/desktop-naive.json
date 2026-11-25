@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "label": "desktop-naive",
+  "server_region": "Los Angeles DC03",
+  "started_utc": "2026-11-25T12:52:28.524990+00:00",
+  "ended_utc": "2026-11-25T12:57:19.009526+00:00",
+  "payload_bytes": 1048576,
+  "rounds": 6,
+  "round_gap_seconds": 17.0,
+  "timeout_seconds": 18,
+  "seed": 23,
+  "cases": {
+    "naive-h2": {
+      "engine": "sing-box",
+      "transport": "tcp"
+    },
+    "direct-https": {
+      "engine": "curl",
+      "transport": "tcp"
+    }
+  },
+  "client_engines": {
+    "sing-box": "sing-box version 1.14.4"
+  },
+  "server_engines": {
+    "sing-box": "sing-box version 1.14.4"
+  },
+  "server_kernel": "6.8.0-31-generic",
+  "rows": [
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 0,
+      "first_ms": 5020.017,
+      "total_ms": 5020.025,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 1,
+      "at_utc": "2026-11-25T12:52:34.341906+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 2196.728,
+      "total_ms": 18045.429,
+      "received_bytes": 245760,
+      "mbps": null,
+      "case": "naive-h2",
+      "round": 1,
+      "at_utc": "2026-11-25T12:52:52.422047+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 718.737,
+      "total_ms": 18015.318,
+      "received_bytes": 196608,
+      "mbps": null,
+      "case": "naive-h2",
+      "round": 2,
+      "at_utc": "2026-11-25T12:53:27.511546+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1421.588,
+      "total_ms": 18003.035,
+      "received_bytes": 278528,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 2,
+      "at_utc": "2026-11-25T12:53:45.574329+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 2180.953,
+      "total_ms": 18033.149,
+      "received_bytes": 294912,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 3,
+      "at_utc": "2026-11-25T12:54:20.962005+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 2305.936,
+      "total_ms": 18040.216,
+      "received_bytes": 344064,
+      "mbps": null,
+      "case": "naive-h2",
+      "round": 3,
+      "at_utc": "2026-11-25T12:54:39.059929+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 818.04,
+      "total_ms": 18016.23,
+      "received_bytes": 851968,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 4,
+      "at_utc": "2026-11-25T12:55:14.302124+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 2255.627,
+      "total_ms": 18014.856,
+      "received_bytes": 360448,
+      "mbps": null,
+      "case": "naive-h2",
+      "round": 4,
+      "at_utc": "2026-11-25T12:55:32.362521+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1332.459,
+      "total_ms": 18017.509,
+      "received_bytes": 327680,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 5,
+      "at_utc": "2026-11-25T12:56:07.447412+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 1564.786,
+      "total_ms": 18019.157,
+      "received_bytes": 147456,
+      "mbps": null,
+      "case": "naive-h2",
+      "round": 5,
+      "at_utc": "2026-11-25T12:56:25.496724+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 2107.302,
+      "total_ms": 18084.372,
+      "received_bytes": 311296,
+      "mbps": null,
+      "case": "direct-https",
+      "round": 6,
+      "at_utc": "2026-11-25T12:57:00.631978+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 2267.117,
+      "total_ms": 18051.205,
+      "received_bytes": 131072,
+      "mbps": null,
+      "case": "naive-h2",
+      "round": 6,
+      "at_utc": "2026-11-25T12:57:18.735885+00:00"
+    }
+  ]
+}

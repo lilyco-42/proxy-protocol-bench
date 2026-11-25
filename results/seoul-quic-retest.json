@@ -1,0 +1,388 @@
+{
+  "schema": 1,
+  "label": "seoul-quic-retest",
+  "server_region": "Los Angeles DC03",
+  "started_utc": "2026-11-25T13:06:53.180614+00:00",
+  "ended_utc": "2026-11-25T13:10:23.807523+00:00",
+  "payload_bytes": 1048576,
+  "rounds": 4,
+  "round_gap_seconds": 12.0,
+  "timeout_seconds": 18,
+  "seed": 99,
+  "origin_keep_alive": false,
+  "cases": {
+    "hysteria1-brutal-20": {
+      "engine": "sing-box",
+      "transport": "udp"
+    },
+    "hysteria2": {
+      "engine": "sing-box",
+      "transport": "udp"
+    },
+    "hysteria2-salamander": {
+      "engine": "sing-box",
+      "transport": "udp"
+    },
+    "hysteria2-brutal-20": {
+      "engine": "sing-box",
+      "transport": "udp"
+    },
+    "tuic-bbr": {
+      "engine": "sing-box",
+      "transport": "udp"
+    },
+    "tuic-cubic": {
+      "engine": "sing-box",
+      "transport": "udp"
+    },
+    "direct-https": {
+      "engine": "curl",
+      "transport": "tcp"
+    }
+  },
+  "client_engines": {
+    "sing-box": "sing-box version 1.14.4"
+  },
+  "server_engines": {
+    "sing-box": "sing-box version 1.14.4"
+  },
+  "server_kernel": "6.8.0-31-generic",
+  "rows": [
+    {
+      "ok": false,
+      "exit": 97,
+      "status": 0,
+      "first_ms": 0.0,
+      "total_ms": 198.324,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "tuic-bbr",
+      "round": 1,
+      "at_utc": "2026-11-25T13:06:55.053754+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 817.129,
+      "total_ms": 5287.169,
+      "received_bytes": 1048576,
+      "mbps": 1.8766,
+      "case": "hysteria2",
+      "round": 1,
+      "at_utc": "2026-11-25T13:07:00.354726+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 586.779,
+      "total_ms": 5408.356,
+      "received_bytes": 1048576,
+      "mbps": 1.7398,
+      "case": "direct-https",
+      "round": 1,
+      "at_utc": "2026-11-25T13:07:05.776082+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 1170.198,
+      "total_ms": 4033.703,
+      "received_bytes": 1048576,
+      "mbps": 2.9295,
+      "case": "hysteria2-brutal-20",
+      "round": 1,
+      "at_utc": "2026-11-25T13:07:09.823795+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 789.95,
+      "total_ms": 3778.198,
+      "received_bytes": 1048576,
+      "mbps": 2.8072,
+      "case": "hysteria1-brutal-20",
+      "round": 1,
+      "at_utc": "2026-11-25T13:07:13.615056+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 600.876,
+      "total_ms": 18001.441,
+      "received_bytes": 376832,
+      "mbps": null,
+      "case": "tuic-cubic",
+      "round": 1,
+      "at_utc": "2026-11-25T13:07:31.627401+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 0,
+      "first_ms": 0.0,
+      "total_ms": 5002.958,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "hysteria2-salamander",
+      "round": 1,
+      "at_utc": "2026-11-25T13:07:36.639859+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 0,
+      "first_ms": 0.0,
+      "total_ms": 5001.992,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "hysteria2-salamander",
+      "round": 2,
+      "at_utc": "2026-11-25T13:07:53.652249+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 402.832,
+      "total_ms": 18002.118,
+      "received_bytes": 212992,
+      "mbps": null,
+      "case": "tuic-cubic",
+      "round": 2,
+      "at_utc": "2026-11-25T13:08:11.668664+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 396.945,
+      "total_ms": 3589.092,
+      "received_bytes": 1048576,
+      "mbps": 2.6279,
+      "case": "hysteria1-brutal-20",
+      "round": 2,
+      "at_utc": "2026-11-25T13:08:15.272098+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 334.724,
+      "total_ms": 3761.759,
+      "received_bytes": 1048576,
+      "mbps": 2.4478,
+      "case": "hysteria2-brutal-20",
+      "round": 2,
+      "at_utc": "2026-11-25T13:08:19.047565+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 494.392,
+      "total_ms": 4017.463,
+      "received_bytes": 1048576,
+      "mbps": 2.381,
+      "case": "direct-https",
+      "round": 2,
+      "at_utc": "2026-11-25T13:08:23.079120+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 97,
+      "status": 0,
+      "first_ms": 0.0,
+      "total_ms": 199.747,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "tuic-bbr",
+      "round": 2,
+      "at_utc": "2026-11-25T13:08:23.288045+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 416.088,
+      "total_ms": 3984.323,
+      "received_bytes": 1048576,
+      "mbps": 2.3509,
+      "case": "hysteria2",
+      "round": 2,
+      "at_utc": "2026-11-25T13:08:27.285230+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 408.184,
+      "total_ms": 12421.764,
+      "received_bytes": 1048576,
+      "mbps": 0.6983,
+      "case": "hysteria2",
+      "round": 3,
+      "at_utc": "2026-11-25T13:08:51.721934+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 0,
+      "first_ms": 0.0,
+      "total_ms": 5002.903,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "hysteria2-salamander",
+      "round": 3,
+      "at_utc": "2026-11-25T13:08:56.735472+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 394.518,
+      "total_ms": 2979.36,
+      "received_bytes": 1048576,
+      "mbps": 3.2453,
+      "case": "hysteria1-brutal-20",
+      "round": 3,
+      "at_utc": "2026-11-25T13:08:59.729206+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 97,
+      "status": 0,
+      "first_ms": 0.0,
+      "total_ms": 200.434,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "tuic-bbr",
+      "round": 3,
+      "at_utc": "2026-11-25T13:08:59.939143+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 401.648,
+      "total_ms": 18002.199,
+      "received_bytes": 507904,
+      "mbps": null,
+      "case": "tuic-cubic",
+      "round": 3,
+      "at_utc": "2026-11-25T13:09:17.954663+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 335.005,
+      "total_ms": 3400.51,
+      "received_bytes": 1048576,
+      "mbps": 2.7365,
+      "case": "hysteria2-brutal-20",
+      "round": 3,
+      "at_utc": "2026-11-25T13:09:21.369456+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 1431.915,
+      "total_ms": 5961.757,
+      "received_bytes": 1048576,
+      "mbps": 1.8519,
+      "case": "direct-https",
+      "round": 3,
+      "at_utc": "2026-11-25T13:09:27.345025+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 351.872,
+      "total_ms": 3183.048,
+      "received_bytes": 1048576,
+      "mbps": 2.9629,
+      "case": "hysteria2-brutal-20",
+      "round": 4,
+      "at_utc": "2026-11-25T13:09:42.542997+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 200,
+      "first_ms": 620.299,
+      "total_ms": 18001.392,
+      "received_bytes": 311296,
+      "mbps": null,
+      "case": "tuic-cubic",
+      "round": 4,
+      "at_utc": "2026-11-25T13:10:00.555580+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 635.308,
+      "total_ms": 9143.96,
+      "received_bytes": 1048576,
+      "mbps": 0.9859,
+      "case": "hysteria2",
+      "round": 4,
+      "at_utc": "2026-11-25T13:10:09.714678+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 28,
+      "status": 0,
+      "first_ms": 0.0,
+      "total_ms": 5002.223,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "hysteria2-salamander",
+      "round": 4,
+      "at_utc": "2026-11-25T13:10:14.726041+00:00"
+    },
+    {
+      "ok": false,
+      "exit": 97,
+      "status": 0,
+      "first_ms": 0.0,
+      "total_ms": 194.442,
+      "received_bytes": 0,
+      "mbps": null,
+      "case": "tuic-bbr",
+      "round": 4,
+      "at_utc": "2026-11-25T13:10:14.929748+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 395.382,
+      "total_ms": 4443.476,
+      "received_bytes": 1048576,
+      "mbps": 2.0722,
+      "case": "hysteria1-brutal-20",
+      "round": 4,
+      "at_utc": "2026-11-25T13:10:19.388114+00:00"
+    },
+    {
+      "ok": true,
+      "exit": 0,
+      "status": 200,
+      "first_ms": 603.937,
+      "total_ms": 4335.042,
+      "received_bytes": 1048576,
+      "mbps": 2.2483,
+      "case": "direct-https",
+      "round": 4,
+      "at_utc": "2026-11-25T13:10:23.736726+00:00"
+    }
+  ]
+}
